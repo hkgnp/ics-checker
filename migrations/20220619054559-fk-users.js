@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var dbm;
 var type;
@@ -15,16 +15,16 @@ exports.setup = function (options, seedLink) {
 };
 
 exports.up = function (db) {
-  return db.addColumn('users', 'role_id', {
-    type: 'smallint',
-    unsigned: 'true',
+  return db.addColumn("users", "role_id", {
+    type: "smallint",
+    unsigned: "true",
     foreignKey: {
-      name: 'user_role_fk',
-      table: 'roles',
-      mapping: 'id',
+      name: "user_role_fk",
+      table: "roles",
+      mapping: "id",
       rules: {
-        onDelete: 'restrict',
-        onUpdate: 'restrict',
+        onDelete: "restrict",
+        onUpdate: "restrict",
       },
     },
   });

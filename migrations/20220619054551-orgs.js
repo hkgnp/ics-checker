@@ -20,7 +20,7 @@ exports.up = function (db) {
     org_name: { type: "string", length: 200 },
     org_contact: { type: "string", length: 12 },
     earliest_admission: { type: "date" },
-    medifund_cases: { type: "int", length: 5 },
+    medifund_cases: { type: "int" },
     special_remarks: { type: "string", length: 800 },
     last_updated: { type: "date" },
   });
