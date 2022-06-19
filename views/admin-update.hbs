@@ -20,7 +20,6 @@
           >
             <p class="text-xl text-white font-bold mb-4">Updating for
               {{this.org_name}}</p>
-
             <label
               class="block text-gray-300 text-sm font-bold mb-1"
               for="earliest_admission"
@@ -29,22 +28,22 @@
             </label>
             <input
               class="shadow appearance-none border rounded mb-4 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="earliest_admission"
+              id="earliest_admission{{this.id}}"
               type="date"
-              name="earliest_admission"
+              name="earliest_admission{{this.id}}"
               value={{dateFormat orgName.earliest_admission "YYYY-MM-DD"}}
             />
             <label
               class="block text-gray-300 text-sm font-bold mb-1"
-              for="female_capacity"
+              for="medifund_cases"
             >
               No. of MediFund cases allowed
             </label>
             <input
               class="shadow appearance-none border rounded mb-4 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="medifund_cases"
+              id="medifund_cases{{this.id}}"
               type="tel"
-              name="medifund_cases"
+              name="medifund_cases{{this.id}}"
               placeholder=""
               value={{orgName.medifund_cases}}
             />
@@ -54,9 +53,9 @@
               Special Remarks</p>
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="special_remarks"
+              id="special_remarks{{this.id}}"
               type="text"
-              name="special_remarks"
+              name="special_remarks{{this.id}}"
               placeholder=""
               value="{{orgName.special_remarks}}"
             />

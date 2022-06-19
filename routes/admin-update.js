@@ -25,7 +25,7 @@ router.post("/", async (req, res) => {
     });
 
     let icsData = {
-      earliest_admission: req.body["earliest_admission"],
+      earliest_admission: req.body["earliest_admission" + i.toString()],
       medifund_cases: req.body["medifund_cases" + i.toString()],
       special_remarks: req.body["special_remarks" + i.toString()],
     };
